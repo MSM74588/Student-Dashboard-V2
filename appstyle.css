@@ -232,11 +232,12 @@ body{
     display: block;
     font-family: Poppins , sans-serif;
     transition: 0.3s;
+    box-shadow: #00000020;
 }
 
 #examp:hover {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    transform: scale(1.1,1.1);
+    
 }
 
 
@@ -421,6 +422,6 @@ body{
 }
 
 .p:hover{
-    transform: rotate(1deg);
+    transform: translateX(7px);
 }
 
