@@ -1,0 +1,426 @@
+/*Made by MandraSaptak*/
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background: #f0f0f0;
+    min-width: 900px;
+
+}
+
+.left > .logo > a > img{
+    height: 130;
+    width: auto;
+}
+
+
+.left{
+
+    background-image: linear-gradient(120deg,#31D638,#29772B);
+    height: 100%;/*menu height must be 100%*/
+    position: sticky;
+    width: 200px;
+    overflow: visible;
+}
+
+.menu , .fill{
+    float: left;/************************/
+}
+
+.logo{
+    display: flex;
+    background-color: transparent;
+    padding-top: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#image{
+}
+
+.logo > a{
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    height:132px;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    margin: 0 15px; /*margin of the logo*/
+    border-radius: 25px;
+    box-shadow: 0 15px 30px #00000016;
+    background-image: linear-gradient(110deg,#FFFFFF,#D2D2D2);
+}
+
+
+
+.menu > .left > .notice{
+    width: fill;
+    height: 200px;
+  background-color: white;
+  margin: 20px;
+    border-radius: 10px;
+}
+
+.menu > .left > .notice > h1{
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    letter-spacing: 2px;
+    color: dimgrey;
+}
+
+
+
+
+.agrid {
+    position: absolute;
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    display: grid;
+    grid-template-columns: auto 290px;
+     grid-template-areas: "a b";
+    height: 100%;
+}
+
+.middlepanel{
+    background-color: white;
+    grid-area: a;
+    height: 100%;
+}
+
+.menuright{
+     background-image: linear-gradient(120deg,#ECECEC,#D5D5D5);
+    grid-area: b;
+    height: 100%;
+}
+
+
+.wrapgrid{
+    display: grid;
+    width: 100%;
+    height: 100%;
+      grid-template-rows: 180px 100px;
+     grid-template-areas: "a" "b";
+
+}
+
+.id{
+    grid-area: a;
+    background-color: #faffba;
+    margin: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px;
+    border-color: #707070;
+      box-shadow: 2px 10px 8px #00000020;
+}
+
+.panell{
+    grid-area: b;
+    margin-left: 10;
+    margin-right: 10;
+
+}
+
+.menulist{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+     grid-template-areas: "ab ba"
+                             "aa bb"
+                             "aaa aaa"
+                             "aaaa bbbb"
+                             "aaaaa bbbbb"
+                             "aaaaaa bbbbbb";
+    }
+
+
+
+#imagea{
+    float: left;
+    padding: 5px;
+    height: 50;
+    width: auto;
+
+}
+
+.questionbank{
+    margin-left: 5px;
+    grid: ab;
+}
+
+.calender{
+    grid-area: ba;
+}
+
+.assignment{
+    margin-left: 5px;
+    grid-area: aa;
+}
+
+.studentcommunity{
+    grid-area: aaa;
+    margin-left: 5px;
+}
+
+.repository{
+    grid-area: aaaa;
+    margin-left: 5px;
+}
+
+.dfiles{
+    grid-area: bbbb;
+}
+
+.fees{
+    grid-area: aaaaa;
+    margin-left: 5px;
+}
+
+.videos{
+    grid-area: bbbbb;
+}
+
+.contact{
+    grid-area: aaaaaa;
+    margin-left: 5px;
+}
+
+.links{
+    grid-area: bbbbbb;
+}
+
+#unit{
+    margin: 5px;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    box-shadow: 2px 10px 8px #00000019;
+    color: darkslategrey;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+#menutext{
+    font-family: sans-serif;
+    font-size: 10;
+    top: 23;
+    position: relative;
+
+
+}
+
+#unit:hover{
+    color: white;
+    background-color: #2da932;
+}
+
+#examp{
+    text-decoration: none;
+    background-color: white;
+    padding: 10;
+    color: dimgrey;
+    position: relative;
+    margin: 20;
+    font-size: 10;
+    border-radius: 10px;
+    display: block;
+    font-family: Poppins , sans-serif;
+    transition: 0.3s;
+}
+
+#examp:hover {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+#name{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12;
+    color: gray;
+    font-family: Poppins ,sans-serif;
+    opacity: 50%;
+    margin: 10;
+    text-align: right;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+
+#name:hover{
+    opacity: 90%;
+}
+
+
+#gc > img{
+    float: left;
+    display: block;
+/*Github Classroom*/
+
+}
+
+#gc > h1{
+    font-size: 15px;
+    padding: 5px;
+    font-family: Poppins ,sans-serif;
+    color: dimgray;
+    transition: 0.1s;
+}
+
+#gc{
+     margin: 20px;
+    background-color: white;
+    display: block;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+
+#gc > h1:hover{
+    color: #2da932;
+}
+
+.middlepanel{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+     grid-template-areas: "p"
+                             "q";
+     grid-row-gap: 10px;
+     overflow:hidden;
+                           }
+
+
+.announcement{
+   grid-area: p;
+   background-color: #FFD7D7;
+   margin: 10;
+   border-radius: 10px;
+   border-width: 2px;
+   margin-bottom: 0;
+   display: list-item;
+   box-shadow: 2px 10px 8px #00000020;
+}
+
+.schedule{
+    grid-area: q;
+    background-color: lightblue;
+    margin: 10;
+    border-radius: 10px;
+    margin-top: 0;
+    box-shadow: 2px 10px 8px #00000020;
+    margin-bottom: 10px;
+    bottom: 0;
+
+
+
+}
+
+#ann{
+  font-family: Poppins , sans-serif;
+  color: #ED7878;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 30px;
+  flex: auto;
+}
+
+.area{
+  background-color: #F9F9F9;
+  border-radius: 10px;
+  padding: 15px;
+  height: 100;
+  font-size: 10;
+  font-family: monospace;
+  margin: 10px;
+  margin-top: 0;
+  opacity: 90%;
+}
+
+#ztext{
+  font-family: Poppins , sans-serif;
+  color: #4dacff;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 30px;
+  flex: auto;
+  padding-bottom: 0px;
+}
+
+.agenda{
+  margin: 10px;
+  display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+     grid-template-areas: "ab"
+                             "aa"
+                             "aaa"
+                             "aaaa"
+                             "aaaaa";
+    grid-row-gap: 0.5%;
+    
+    }
+
+.period1{
+    grid-area: ab;
+}
+
+.period2{
+    grid-area: aa;
+}
+
+.period3{
+    grid-area: aaa;
+}
+
+.period4{
+    grid-area: aaaa;
+}
+
+.period5{
+    grid-area: aaaaa;
+}
+
+#time{
+    position: relative;
+    float: right;
+    padding-right: 20px;
+    font-size: 30px;
+    font-family: poppins, sans-serif;
+    margin: 7px;
+}
+
+#title{
+    float: left;
+    font-size: 30px;
+    font-family: poppins, sans-serif;
+    margin: 7px;
+    margin-left: 20px;
+}
+
+.p{
+    position: relative;
+    height: 90%;
+    background-color: #ECECEC;
+    width: 97%;
+    margin-right: 1px;
+    border-radius: 5px;
+    box-shadow: 2px 10px 8px #00000020;
+    transition: 0.5s;
+}
+
+.p:hover{
+    transform: rotate(1deg);
+}
+

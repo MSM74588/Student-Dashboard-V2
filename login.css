@@ -1,0 +1,52 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f0f0f0;
+
+}
+
+.background{
+  background-color: lightblue;
+
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  height: 100vh;
+  width: 100vw;
+
+
+}
+
+.logincon{
+
+
+  padding: 70px;
+}
+
+#title{
+  text-align: center;
+  font-family: Poppins ,sans-serif;
+  font-size: 20px;
+
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: a b;
+    padding: 70px;
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+
+}
+
+.left{
+    background-color: white;
+    grid-area: a;
+
+
+}
