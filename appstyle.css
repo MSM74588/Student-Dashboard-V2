@@ -425,3 +425,20 @@ body{
     transform: translateX(7px);
 }
 
+#dark{
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    padding: 5px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 1px;
+    visibility: hidden;
+    /*Dark mode system not enabled yet...to be applied using javascript or typescript not pure CSS*/
+}
+
+#dark > img{
+    width: auto;
+    height: 50px;
+}
