@@ -7,6 +7,8 @@
 body{
     background: #f0f0f0;
     min-width: 900px;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -123,14 +125,18 @@ body{
     padding-left: 15px;
     box-shadow: 0 15px 30px #00000016;
     border-radius: 3px;
+    float: left;
 }
 
 .workspace{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-     grid-template-areas: "p"
-                             "q";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+     grid-template-areas: "p pp ppp pppp"
+                             "q qq qqq qqqq";
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .workspaceleft{
