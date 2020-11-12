@@ -1,4 +1,7 @@
 <html>
+<?php
+    include_once 'include/dbh.inc.php'
+?>
     <script type="text/javascript">
   if (screen.width <= 1209) {
     document.location = "/error_page/error.html";
@@ -13,7 +16,7 @@
 
 
           <style>
-          /* IDEA:insert the PHP style here  */
+          /* IDEA:insert the style here  */
           </style>
 
 

@@ -37,9 +37,6 @@ body{
     padding-right: 5%;
 }
 
-#image{
-}
-
 .logo > a{
     display: flex;
     justify-content: center;
@@ -52,8 +49,6 @@ body{
     box-shadow: 0 15px 30px #00000016;
     background-image: linear-gradient(110deg,#FFFFFF,#D2D2D2);
 }
-
-
 
 .menu > .left > .notice{
     width: fill;
@@ -71,9 +66,6 @@ body{
     letter-spacing: 2px;
     color: dimgrey;
 }
-
-
-
 
 .agrid {
     position: absolute;
@@ -433,8 +425,6 @@ body{
     margin: 20px;
     background-color: white;
     border-radius: 10px;
-    padding-top: 1px;
-    visibility: hidden;
     /*Dark mode system not enabled yet...to be applied using javascript or typescript not pure CSS*/
 }
 
