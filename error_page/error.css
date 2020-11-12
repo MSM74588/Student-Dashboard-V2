@@ -4,8 +4,9 @@
 }
 
 body{
-    background: #f0f0f0;
-    padding: 0;  
+    padding: 0; 
+    background-image: url(cool-background.svg); 
+    background-repeat: no-repeat, repeat;
 }
 
 .error {
@@ -14,33 +15,57 @@ body{
     display: inline-block;
 }
 
-
-img{
-    background-color: whitesmoke;
-    border-radius: 7px;
-    max-width:100%;
-    display: block;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
 .error > .text > h1{
-    font-family: 'Bungee', cursive;
-    font-size: 15px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
     z-index: 2;
-    position: absolute;
-    text-align: center;
+    text-align: right;
     width: 100%;
     margin-top: 20vh;
     padding: 2px;
-    background-color: antiquewhite;
     border-radius: px;
+    float: right;
 }
 
 .text{
-    top: 10;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 20;
+    padding-bottom: 0;
 }
+
+#lottie{
+    position: absolute;
+    padding-top: 40%;
+    padding-right: auto;
+    padding-left: auto;
+    margin-left: 30px;
+}
+
+#logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 14px;
+background: #ffffff;
+box-shadow:  13px 13px 27px #949494, 
+             -13px -13px 27px #ffffff;
+}
+
+#logo > img{
+    height: 100px;
+}
+
+#reload{
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    margin: 10px;
+}
+
 
