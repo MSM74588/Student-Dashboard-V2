@@ -300,7 +300,8 @@ body{
    margin: 10;
    border-radius: 10px;
    border-width: 2px;
-   margin-bottom: 0;
+   margin-top: 10px;
+   padding-bottom: 1.5px;
    display: list-item;
    box-shadow: 2px 10px 8px #00000020;
 }
@@ -338,6 +339,7 @@ body{
   margin: 10px;
   margin-top: 0;
   opacity: 90%;
+  margin-bottom: 5;
 }
 
 #ztext{
@@ -415,6 +417,7 @@ body{
 
 .p:hover{
     transform: translateX(7px);
+    
 }
 
 #dark{

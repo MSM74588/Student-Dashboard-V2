@@ -1,7 +1,4 @@
 <html>
-<?php
-    include_once 'include/dbh.inc.php'
-?>
     <script type="text/javascript">
   if (screen.width <= 1209) {
     document.location = "/error_page/error.html";
@@ -16,7 +13,7 @@
 
 
           <style>
-          /* IDEA:insert the style here  */
+          /* IDEA:insert the PHP style here  */
           </style>
 
 
@@ -76,6 +73,9 @@
                      <h1 id="ann">Announcement:</h1>
                      <div class="area">
                        <h1>php system is work in progress</h1>
+                       <?php
+                            echo "<h1>15.11.2020: Hello World!</h1>";
+                       ?>
 
                      </div>
 
