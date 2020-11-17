@@ -6,47 +6,43 @@
 body{
     background: #c7f3b9;
     min-width: 900px;
-    overflow: ;
+    overflow: hidden;
 
 }
 
+html, body{
+    height: 100%;
+}
+
 .wrappergrid{
-        display: grid;
-        grid-template-columns: 400px 1fr;
-        grid-template-rows: 100vh;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        grid-template-areas: "aa" 
-                             "bb";
+         display: grid;
+          grid-template-columns: 400px 1fr;
+           grid-template-rows: 100vh;
+          gap: 0px 20px;
+          grid-template-areas:
+          "aa bb";
 }
 
 .mainleft{
     grid-area: aa;
-    height: calc(100% - 40px);
+    
     width: 100%;
     border-radius: 17px;
     background: #c7f3b9;
     box-shadow:  8px 8px 16px #a3c798, 
                  -8px -8px 16px #ebffda;
     margin: 20px;
-    
 }
 
 .right{
     grid-area: bb;
-    height: calc(100% - 40px);
     width: 100%;
-    border-radius: 17px;
-    background: #c7f3b9;
-    box-shadow:  8px 8px 16px #a3c798, 
-                 -8px -8px 16px #ebffda;
-    margin: 20px;
+    height: 100%;
+
+    
 }
 
 .container{
-    position: absolute;
-    top: 0;
-    left: 0;
     padding: 40px;
 
 }
@@ -90,7 +86,7 @@ body{
   }
 
   input {
-    border-radius: 6px;
+    border-radius: 30px;
     background: #c7f3b9;
     box-shadow: inset 5px 5px 8px #bbe4ae, 
                 inset -5px -5px 8px #d3ffc4;
@@ -144,19 +140,119 @@ input[type=number] {
     margin-top: 40px;
     grid-area: e;
     width: 290px;
-    border-radius: 6px;
+    border-radius: 30px;
 background: #c7f3b9;
 box-shadow:  5px 5px 8px #bbe4ae, 
              -5px -5px 8px #d3ffc4;
              text-align: center;
              padding: 0;
+             cursor: grab;
 }
 
 .rightcontainer{
+    
+    
+    border-radius: 17px;
+    background: #c7f3b9;
+    box-shadow:  8px 8px 16px #a3c798, 
+                 -8px -8px 16px #ebffda;
+    margin: 20px;
+    padding: 20px;
+    height: calc(100% - 80px);
+
+}
+
+.schoolname {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    top: 50%;
+    position: relative;
+    font-size: 17px;
+    color: #349157;
+}
+
+.announcement{
+    height: 79%;
+    width: 62%;
+    margin: 10px;
+    position: absolute;
+    margin-bottom: -180px;
+    border-radius: 10px;
+background: #c7f3b9;
+box-shadow:  9px 9px 18px #a1c596, 
+             -9px -9px 18px #edffdc;
+}
+
+.area{
+    height: calc(100% - 80px);
+    width: calc(100% - 40px);
+    margin: 20px; 
+    border-radius: 23px;
+background: #c7f3b9;
+box-shadow: inset 5px 5px 10px #bfe9b2, 
+            inset -5px -5px 10px #cffdc0;
+            margin-top: 0;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden;
+    
+}
+
+.subpart{
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
-.schoolname{
+#anntitle{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-left: 50px;
+    margin-bottom: 0;
+    color: #85AB71;
+}
+
+.card{
+    height: auto;
+    background-color: #EDF2AC;
+    width: 95%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    float: left;
 
 }
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+
+ h2 {
+      font-size: 20px;
+      font-family: 'Poppins', Arial;
+  }
+
+p {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
