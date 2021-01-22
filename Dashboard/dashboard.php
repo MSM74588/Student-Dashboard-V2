@@ -1,8 +1,3 @@
-
-<?php
-include('session.php');
-?>
-
 <html>
     <script type="text/javascript">
   if (screen.width <= 1209) {
@@ -74,20 +69,18 @@ include('session.php');
 
             <div class="agrid">
                 <div class="middlepanel">
-                    <div>
                   <div class="announcement">
-                      <div>
                      <h1 id="ann">Announcement:</h1>
                      <div class="area">
                        <h1>php system is work in progress</h1>
-                    </div>
+                       <?php
+                            echo "<h1>15.11.2020: Hello World!</h1>";
+                       ?>
 
                      </div>
 
 
                   </div>
-                  
-                  <div>
                   <div class="schedule">
                     <div class="zoom">
                       <h1 id="ztext">Zoom</h1>
@@ -116,10 +109,8 @@ include('session.php');
                       </div>
 
                     </div>
-                </div>
 
                   </div>
-                </div>
                 </div>
                 <div class="menuright">
                     <div class="wrapgrid">

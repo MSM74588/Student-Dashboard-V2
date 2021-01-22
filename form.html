@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formstyle.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <?php
+         
+    // define variables and set to empty values
+    $notice = $announcement = $p1 = $p1link = $p2 = $p2link = $p3 = $p3link $p4 =$p4link =$p5 =$p5link =$p6 =$p6link =$p7 =$p7link =$p8 =$p8link =="";
+    
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+       $notice = test_input($_POST["notice"]);
+       $announcement = test_input($_POST["Announcement"]);
+       $p1 = test_input($_POST["1p"]);
+       $p1link = test_input($_POST["1pl"]);
+       $p2 = test_input($_POST["2p"]);
+       $p2link = test_input($_POST["2pl"]);
+       $p3 = test_input($_POST["3p"]);
+       $p3link = test_input($_POST["3pl"]);
+       $p4 = test_input($_POST["4p"]);
+       $p4link = test_input($_POST["4pl"]);
+       $p5 = test_input($_POST["5p"]);
+       $p5link = test_input($_POST["5pl"]);
+       $p6 = test_input($_POST["6p"]);
+       $p6link = test_input($_POST["6pl"]);
+       $p7 = test_input($_POST["7p"]);
+       $p7link = test_input($_POST["7pl"]);
+       $p8 = test_input($_POST["8p"]);
+       $p8link = test_input($_POST["8pl"]);
+
+
+    }
+    
+    function test_input($data) {
+       $data = trim($data);
+       $data = stripslashes($data);
+       $data = htmlspecialchars($data);
+       return $data;
+    }
+ ?>
+
+    <h1>Notice Database</h1>
+    <!-- <form method = "post" action = "/php/php_form_introduction.htm"></form> -->
+    <form action="post">
+        <table>
+            <tr>
+                <!-- create a centralised data base from where the notice will be shown in all websites -->
+                <td><h2>Notice</h2></td> 
+                <!-- <td><input type = "text" name = "notice"></td> -->
+                <td><textarea name="notice" id="notice" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td><h2>Announcement</h2></td>
+                <!-- <td><input type = "text" name = "Announcement"></td> -->
+                <td><textarea name="Announcement" id="ann" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type = "text" name = "1p" placeholder="1st Period"></td>
+                <td><input type = "url" name = "1pl" placeholder="1st Period link"></td>
+            </tr>
+            <tr>
+                <td><input type = "text" name = "2p" placeholder="2nd Period"></td>
+                <td><input type = "url" name = "2pl" placeholder="2nd Period link"></td>
+            </tr>
+            <tr>
+                <td><input type = "text" name = "3p" placeholder="3rd Period"></td>
+                <td><input type = "url" name = "3pl" placeholder="3rd Period link"></td>
+            </tr>
+            <tr>
+                <td><input type = "text" name = "4p" placeholder="4th Period"></td>
+                <td><input type = "url" name = "4pl" placeholder="4th Period link"></td>
+            </tr>
+            <tr>
+                <td><input type = "text" name = "5p" placeholder="5th Period"></td>
+                <td><input type = "url" name = "5pl" placeholder="5th Period link"></td>
+            </tr>
+            <tr>
+                <td><input type = "text" name = "6p" placeholder="6th Period"></td>
+                <td><input type = "url" name = "6pl" placeholder="6th Period link"></td>
+            </tr>
+        </table>
+        <button id="submit"><h2>Submit</h2></button>
+        <!-- <input type="submit"> -->
+    </form>
+</body>
+</html>
